@@ -15,7 +15,7 @@ Enhanced development server for Docsify.
 
 - History router mode support
 - Full support for [docsify-cli](https://www.npmjs.com/package/docsify-cli) options
-- Full support for [live-server](https://www.npmjs.com/package/live-server) options
+- Partial support for [live-server](https://www.npmjs.com/package/live-server) options
 
 # 🧑‍💻 Usage
 
@@ -24,6 +24,10 @@ npx docsify-serve [path] [...options]
 
 # npx docsify-serve docs --open
 ```
+
+### Options
+
+All options are optional. Run `npx docsify-serve --help` to see all options.
 
 ## 💻 Development
 
