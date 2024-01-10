@@ -13,11 +13,17 @@
       "prettier --write --ignore-unknown"
     ]
   },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "live-server": "^1.2.2"
+  },
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@tsconfig/node20": "^20.1.2",
+    "@types/connect": "^3.4.38",
+    "@types/live-server": "^1.2.3",
     "@types/node": "^20.10.8",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
