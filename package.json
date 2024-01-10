@@ -1,8 +1,17 @@
 {
   "name": "docsify-serve",
   "description": "Enhanced development server for Docsify",
+  "type": "module",
   "volta": {
     "node": "20.10.0"
   },
-  "packageManager": "pnpm@9.0.0-alpha.0+sha256.73ada1a82ae5a62c3da44e4841e56d471a5f52a48590b212ea04466923689e3b"
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "packageManager": "pnpm@9.0.0-alpha.0+sha256.73ada1a82ae5a62c3da44e4841e56d471a5f52a48590b212ea04466923689e3b",
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "husky": "^8.0.3"
+  }
 }
