@@ -1,8 +1,23 @@
 {
   "name": "docsify-serve",
   "description": "Enhanced development server for Docsify",
+  "keywords": [
+    "docsify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simochee/docsify-serve.git"
+  },
+  "author": {
+    "name": "simochee",
+    "email": "lollipop@simochee.net",
+    "url": "https://simochee.net"
+  },
   "type": "module",
   "bin": "./dist/index.cjs",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --out-dir lib --clean",
     "dev": "tsx src/index.ts",
