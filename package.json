@@ -13,6 +13,11 @@
       "prettier --write --ignore-unknown"
     ]
   },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "dependencies": {
     "commander": "^11.1.0",
     "live-server": "^1.2.2"
