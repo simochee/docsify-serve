@@ -14,12 +14,12 @@
     "url": "https://simochee.net"
   },
   "type": "module",
-  "bin": "./lib/index.cjs",
+  "bin": "./lib/index.js",
   "files": [
     "lib"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --out-dir lib --clean",
+    "build": "tsup src/index.ts --out-dir lib --format esm --clean",
     "dev": "tsx src/index.ts",
     "prepare": "husky install"
   },

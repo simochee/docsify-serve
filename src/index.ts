@@ -6,6 +6,10 @@ import { readFile } from "node:fs/promises";
 import type { ServerResponse } from "node:http";
 import { join } from "node:path";
 
+const pkg = JSON.parse(
+  await readFile(new URL("../package.json", import.meta.url), "utf-8"),
+);
+
 program
   .name("docsify-serve")
   .argument("[path]", "path to serve")
@@ -23,7 +27,7 @@ program
     "* wait for all changes, before reloading",
     "300",
   )
-  .version("1.0.0", "-v, --version", "display version for command");
+  .version(pkg.version, "-v, --version", "display version for command");
 
 program.parse();
 

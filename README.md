@@ -20,9 +20,9 @@ Enhanced development server for Docsify.
 # 🧑‍💻 Usage
 
 ```shell
-npx docsify-serve [path] [...options]
+npx docsify-serve [options] [path]
 
-# npx docsify-serve docs --open
+# npx docsify-serve --open --entry-file 404.html docs
 ```
 
 ### Options
