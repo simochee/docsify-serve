@@ -14,6 +14,7 @@ program
   .option("--no-open", "suppress opening a browser")
   .option("-p, --port <PORT>", "port to use", "3000")
   .option("-H, --host <HOST>", "* host to use", "0.0.0.0")
+  .option("--entry-file <PATH>", "* fallback file for SPA", "index.html")
   .option("--ignore <PATH>", "* path to ignore")
   .option("-q, --quiet", "* suppress logging")
   .option("-V, --verbose", "* more logging")
@@ -26,7 +27,8 @@ program
 
 program.parse();
 
-const { port, host, open, ignore, wait, quiet, verbose } = program.opts();
+const { port, host, open, entryFile, ignore, wait, quiet, verbose } =
+  program.opts();
 const root = program.args[0] || "";
 
 const fallback = async (
@@ -56,6 +58,7 @@ liveServer.start({
   host,
   root,
   open: open === true,
+  file: entryFile,
   ignore,
   wait: Number(wait) || 300,
   logLevel: quiet ? 0 : verbose ? 2 : 1,
