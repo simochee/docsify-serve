@@ -9,6 +9,14 @@
 [![License](https://img.shields.io/npm/l/docsify-serve)](https://github.com/simochee/docsify-serve/blob/main/LICENSE)
 [![Release](https://github.com/simochee/docsify-serve/actions/workflows/release.yaml/badge.svg)](https://github.com/simochee/docsify-serve/actions/workflows/release.yaml)
 
+Enhanced development server for Docsify.
+
+# 🧩 Features
+
+- History router mode support
+- Full support for [docsify-cli](https://www.npmjs.com/package/docsify-cli) options
+- Full support for [live-server](https://www.npmjs.com/package/live-server) options
+
 # 🧑‍💻 Usage
 
 ```shell
