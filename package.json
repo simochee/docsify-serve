@@ -2,16 +2,25 @@
   "name": "docsify-serve",
   "description": "Enhanced development server for Docsify",
   "type": "module",
-  "volta": {
-    "node": "20.10.0"
-  },
   "scripts": {
     "prepare": "husky install"
   },
-  "packageManager": "pnpm@9.0.0-alpha.0+sha256.73ada1a82ae5a62c3da44e4841e56d471a5f52a48590b212ea04466923689e3b",
+  "lint-staged": {
+    "*": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
-    "husky": "^8.0.3"
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "prettier-plugin-packagejson": "^2.4.9"
+  },
+  "packageManager": "pnpm@9.0.0-alpha.0+sha256.73ada1a82ae5a62c3da44e4841e56d471a5f52a48590b212ea04466923689e3b",
+  "volta": {
+    "node": "20.10.0"
   }
 }
