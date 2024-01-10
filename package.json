@@ -14,7 +14,7 @@
     "url": "https://simochee.net"
   },
   "type": "module",
-  "bin": "./dist/index.cjs",
+  "bin": "./lib/index.cjs",
   "files": [
     "lib"
   ],
