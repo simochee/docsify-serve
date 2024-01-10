@@ -5,7 +5,6 @@
 <h3 align="center">Serve Docsify</h3>
 <p align="center">by <a href="https://github.com/simochee">simochee</a></p>
 
-[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/docsify-serve/badge)](https://www.jsdelivr.com/package/npm/docsify-serve)
 [![npm version](https://badge.fury.io/js/docsify-serve.svg)](https://badge.fury.io/js/docsify-serve)
 [![License](https://img.shields.io/npm/l/docsify-serve)](https://github.com/simochee/docsify-serve/blob/main/LICENSE)
 [![Release](https://github.com/simochee/docsify-serve/actions/workflows/release.yaml/badge.svg)](https://github.com/simochee/docsify-serve/actions/workflows/release.yaml)
